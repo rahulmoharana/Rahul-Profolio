@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", serif;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  width: 100%;
+  background-color:black;
+}
+nav {
+  width: 100%;
+  padding: 1vw 3vw;
+  /*background-color: aqua;*/
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  overflow: hidden;
+
+  background: rgba( 255, 255, 255, 0.1 );
+  
+  backdrop-filter: blur( 10.5px );
+  -webkit-backdrop-filter: blur( 10.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+nav a {
+  text-decoration: none;
+  color:white;
+ 
+  font-size: 1vw;
+  font-weight: 00;
+  font-style: normal;
+  position: relative;
+  padding-bottom: 2px;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+
+  background-color:white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out  ;
+}
+nav a:hover::before{
+    transform: scaleX(1);
+
+
+}
+.main-con{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    overflow: hidden;
+}
+.short-leb{
+
+    width: 30%;
+    /*background-color: aquamarine;*/
+    height: 100%;
+    position: relative;
+}
+.lebal{
+    padding: 2vw 2vw;
+    width: 25vw;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left:-5px;
+    border-radius: 500px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    transform: scale(1.5);
+    margin-top: 2vw;
+}
+
+.intro{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+}
+#skills{
+  height: 100VH;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#skills .circle{
+  position: absolute;
+  height: 7vw;
+  width: 12vw;
+  border: .5px solid grey;
+  color: white;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right:20px;
+  z-index: 1;
+  overflow: hidden;
+}
+.circle h1{
+  font-weight: 400;
+  z-index: 1;
+
+}
+.overley{
+  height: 8vw;
+  width: 13vw;
+  background-color: red;
+  position:absolute;
+  top: 105%;
+  border-radius: 50%;
+  z-index: 0;
+  transition: all .5s ease ;
+}
+#skills .skill-con{
+  
+  width: 80%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.skill-con h2{
+  padding: 1vw 2vw;
+  font-weight: 400;
+  color: grey;
+
+  border: 1px solid grey;
+  border-radius: 500px;
+  filter: blur(10px);
+  opacity: 0;
+  transition: all ease-in-out .5s;
+}
+#about{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 15vw;
+  background-color: black;
+  color: white;
+
+}
+#about .heading {
+  display: flex;
+  gap: 2vw;
+  flex-direction: column;
+  
+
+}
+.heading h1{
+  font-size: 5vw;
+}
+.heading p{
+  font-size: 2vw;
+
+  /*   margin-bottom: -250px; */
+  
+  line-height: 1.2;
+  /*   outline: 6px dotted teal; */
+  
+}
+.heading p span{
+  color: red;
+
+}
+.line{
+  width: 0%;
+  height: 1px;
+  background-color: white;
+}
+#projects{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+#projects .links{
+  padding: 5vw 2vw;
+  width: 100%;
+
+}
+#projects .header{
+  padding-top: 2vw;
+  font-size: 10vw;
+}
+
+  
+
+#projects #headers{
+  font-size: 10vw;
+  font-weight: 400;
+  padding-top: 5vw;
+}
+
+
+.links a{
+  padding:2vw 4vw;
+  text-decoration: none;
+  background-color: black;
+  border-bottom: 1px solid white;
+  color: white;
+  display: flex;
+  
+  flex-direction: column;
+  overflow:hidden;
+
+}
+.rect{
+  height: 25vw;
+  width: 55vw;
+  /* background-color: aqua; */
+  position: absolute;
+  z-index: 10;
+  transition: all 0.5s ease;
+  transform: translate(-50%,-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+.headd{
+  overflow: hidden;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  width: 320px;
+  height: 350px;
+  padding: 20px;
+  color: white;
+  background: transparent;
+  border: 1px solid #ff0000;
+  display: flex;
+  opacity: 1;
+  overflow: hidden;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.card .heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: wrap;
+}
+
+.card .footer {
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.card:hover {
+  border-radius: 12px;
+  background-color: red;
+  scale: 0.95;
+  rotate: 8deg;
+  box-shadow: 0px 3px 187.5px 7.5px rgba(255, 0, 0, 0.4);
+}
+.card:hover a{
+  background-color: black;
+  color: #ff0000;
+}
+#contact{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}
+.footer{
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+  padding: .5vw;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+ 
+}

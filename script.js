@@ -205,7 +205,7 @@ paralinks.forEach((elem)=>{
 const tl4 = gsap.timeline({
     scrollTrigger:{
         trigger:"#contact",
-        markers:true,
+        // markers:true,
         start:"0% 50%",
         end:"50% 60%",
         scrub:1

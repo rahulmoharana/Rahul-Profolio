@@ -8,7 +8,11 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-$(".intro h1").scramble(2000, 20, "alphabet", true);
+
+
+
+
+
 const headings = document.querySelectorAll(".skill-con h2")
 headings.forEach((elem)=>{
     elem.addEventListener("mouseover",function(){

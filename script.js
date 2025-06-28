@@ -189,7 +189,7 @@ const tl3 = gsap.timeline({
 const h1links = document.querySelectorAll(".links a h1")
 h1links.forEach((elem)=>{
     tl3.from(elem,{
-        y:200,
+        y:400,
         rotate:20,
         transformOrigin:"left"
     },"a")
@@ -198,7 +198,7 @@ h1links.forEach((elem)=>{
 const paralinks = document.querySelectorAll(".links a p")
 paralinks.forEach((elem)=>{
     tl3.from(elem,{
-        y:200,
+        y:400,
         rotate:20,
         transformOrigin:"left"
         

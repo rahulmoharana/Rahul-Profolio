@@ -206,20 +206,25 @@ paralinks.forEach((elem)=>{
     },"a")
 
 })
-const tl4 = gsap.timeline({
-    scrollTrigger:{
-        trigger:"#contact",
-        // markers:true,
-        start:"0% 50%",
-        end:"50% 60%",
-        scrub:1
-    }
+
+const loader = document.querySelectorAll('.loader h1');
+gsap.timeline()
+.to(loader, {
+  duration: 3, 
+  scrambleText: {
+    text: "Hi...,Welcome to Rahul's Portfolio", 
+    chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()(_+", 
+    revealDelay: 0.5, 
+    speed: 0.3, 
+    newClass: "myClass"
+  }
+  
 })
-tl4.from(".card",{
-   
-    onStart:function(){
-        $(".main-content p").scramble(2000, 20, "alphabet", true);
-    }
+
+.to('.loader',{
+    y:-1000,
+    opacity:0,
+    duration:3
 })
 
 

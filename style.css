@@ -232,7 +232,7 @@ nav a:hover::before{
   
 
 #projects #headers{
-  font-size: 10vw;
+  font-size: 7vw;
   font-weight: 400;
   padding-top: 5vw;
 }
@@ -340,8 +340,56 @@ nav a:hover::before{
   display: flex;
  
 }
+.loader{
+  font-size: 3vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 99;
+  color: white;
+  padding: 5vh 10vh;
+  text-align: center;
+ 
+}
+.loader h1{
+   background: linear-gradient(white,rgb(88, 87, 87));
+   background-clip: text;
+   color: transparent;
+}
 
-@media scree {
-  
-  
+@media (max-width:500px) {
+  nav a{
+    font-size: 12px;
+  }
+  nav{
+    padding: 2vh 1vh;
+  }
+  .lebal{
+    width: 200px;
+    top: 10%;
+    left: 10%;
+
+  }
+  .lebal h1{
+    font-size: 12px;
+  }
+  .lebal p{
+    font-size: 15px;
+  }
+  .circle h1{
+    font-size: 12px;
+  }
+  .heading h1{
+    font-size: 5vh;
+  }
+  .sub p{
+    font-size: 1.5vh;
+  }
 }
